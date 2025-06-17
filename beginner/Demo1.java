@@ -7,6 +7,24 @@ class Calculator
     }
 }
 
+class Computer
+{
+    public void playMusic()
+    {
+        System.out.println("Playing Music");
+    }
+
+    public String getMeAPen(int cost)
+    {
+        if(cost >= 10)
+        {
+            return "Pen";
+        }
+            return "Nothing";
+    }
+
+}
+
 public class Demo1 
 {
     public static void main(String[] args) 
@@ -16,9 +34,12 @@ public class Demo1
         
         Calculator c1 = new Calculator();
         int result = c1.add(num1 , num2);
-
-        // int result = num1 + num2;
         System.out.println(result);
+
+        Computer obj = new Computer();
+        obj.playMusic();
+        String str = obj.getMeAPen(1);
+        System.out.println(str);
     }    
 }
 
