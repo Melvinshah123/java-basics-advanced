@@ -16,7 +16,9 @@ public class Demo2
    public static void main(String[] args) 
    {
         Calc obj = new Calc();
-        int result = obj.add(1, 2);
-        System.out.println(result);
+        int result1 = obj.add(1, 2);
+        int result2 = obj.add(1,2,3);
+        System.out.println(result1);
+        System.out.println(result2);
    }
 }
